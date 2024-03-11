@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: tomato;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+        }
+
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            margin-top: 20px;
+            display: block;
+        }
+
+        a:hover {
+            color: tomato;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function login() {
+            alert("Implemente a lógica de login!");
+        }
+
+        function incluir() {
+            alert("Implemente a lógica de inclusão!");
+        }
+
+        function excluir() {
+            alert("Implemente a lógica de exclusão!");
+        }
+
+        function alterar() {
+            alert("Implemente a lógica de alteração!");
+        }
+
+        function consultar() {
+            alert("Implemente a lógica de consulta!");
+        }
+    </script>
+    <title>Cadastro</title>
+</head>
+<body>
+<div class="container">
+    <form id="cadastroForm">
+        <h2>Cadastro</h2>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="curso">Nome do Curso:</label>
+        <input type="text" id="curso" name="curso" required />
+
+        <label for="horarioInicio">Horário Início:</label>
+        <input type="text" id="horarioInicio" name="horarioInicio" placeholder="Ex: 09:00" required />
+
+        <label for="horarioFim">Horário Fim:</label>
+        <input type="text" id="horarioFim" name="horarioFim" placeholder="Ex: 12:00" required />
+
+        <button type="button" onclick="incluir()">Incluir</button>
+        <button type="button" onclick="excluir()">Excluir</button>
+        <button type="button" onclick="alterar()">Alterar</button>
+        <button type="button" onclick="consultar()">Consultar</button>
+    </form>
+</div>
+</body>
+</html>
